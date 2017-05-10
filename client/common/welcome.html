@@ -1,0 +1,52 @@
+<template name="welcome">
+        <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <!--<div class="row">-->
+                <!--<div class="col-lg-12">-->
+
+                        <!--{{> signup}}-->
+
+
+                <!--</div>-->
+            <!--</div>-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--{{> Template.dynamic template=content}}-->
+                    <div class="intro-message">
+                        <h1>DineMore</h1>
+                        <!--<h3></h3>-->
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            {{#if $not currentUser}}
+                                <li class="logout">Logout</li>
+                                <p>logged in</p>
+                            {{else}}
+                                <li>
+                                    <button class="login-toggle" id="login1">login/sign-up</button>
+                                </li>
+                                <p>not logged in</p>
+                            {{/if}}
+                            <li>
+                                <button class="btn btn-default btn-lg" id="login"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></button>
+                            </li>
+                            <li>
+                                <button class="btn btn-default btn-lg" id="user"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></button>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+</template>

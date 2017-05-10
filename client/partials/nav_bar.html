@@ -1,0 +1,103 @@
+<template name="nav_bar">
+    <!-- Main Header -->
+    <header class="main-header">
+
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>A</b>LT</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>EASY</b>Order</span>
+        </a>
+
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!--&lt;!&ndash; Sidebar toggle button&ndash;&gt;-->
+            <!--<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+            <!--</a>-->
+
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul>
+                    <li>
+                        <button class="btn btn-default btn-lg" id="login"><span class="network-name" >Login</span></button>
+                    </li>
+                    <!--<li>-->
+                    <!--&lt;!&ndash;<button class="btn btn-default btn-lg; login-toggle;" id="user"> <span class="network-name">User</span></button>&ndash;&gt;-->
+                    <!--</li>-->
+                    {{#if currentUser}}
+                        <li class="logout">Logout</li>
+
+                    {{else}}
+                        <li>
+                            <button class="login-toggle" id="login1">login/sign-up</button>
+                        </li>
+
+                    {{/if}}
+
+                </ul>
+
+                <!--<ul class="nav navbar-nav">-->
+
+                    <!--&lt;!&ndash; Notifications Menu &ndash;&gt;-->
+                    <!--<li class="dropdown notifications-menu">-->
+                        <!--&lt;!&ndash; Menu toggle button &ndash;&gt;-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+                            <!--<i class="fa fa-bell-o"></i>-->
+                            <!--<span class="label label-warning">10</span>-->
+                        <!--</a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--<li class="header">You have 10 notifications</li>-->
+                            <!--<li>-->
+                                <!--&lt;!&ndash; Inner Menu: contains the notifications &ndash;&gt;-->
+                                <!--<ul class="menu">-->
+                                    <!--<li>&lt;!&ndash; start notification &ndash;&gt;-->
+                                        <!--<a href="#">-->
+                                            <!--<i class="fa fa-users text-aqua"></i> 5 new members joined today-->
+                                        <!--</a>-->
+                                    <!--</li>-->
+                                    <!--&lt;!&ndash; end notification &ndash;&gt;-->
+                                <!--</ul>-->
+                            <!--</li>-->
+                            <!--<li class="footer"><a href="#">View all</a></li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+
+                    <!--&lt;!&ndash; User Account Menu &ndash;&gt;-->
+                    <!--<li class="dropdown user user-menu">-->
+                        <!--&lt;!&ndash; Menu Toggle Button &ndash;&gt;-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+                            <!--&lt;!&ndash; The user image in the navbar&ndash;&gt;-->
+                            <!--<img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">-->
+                            <!--&lt;!&ndash; hidden-xs hides the username on small devices so only the image appears. &ndash;&gt;-->
+                            <!--<span class="hidden-xs">Alexander Pierce</span>-->
+                        <!--</a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <!--&lt;!&ndash; The user image in the menu &ndash;&gt;-->
+                            <!--<li class="user-header">-->
+                                <!--<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">-->
+
+                                <!--<p>-->
+                                    <!--Alexander Pierce - Web Developer-->
+                                    <!--<small>Member since Nov. 2012</small>-->
+                                <!--</p>-->
+                            <!--</li>-->
+
+                            <!--&lt;!&ndash; Menu Footer&ndash;&gt;-->
+                            <!--<li class="user-footer">-->
+                                <!--<div class="pull-right">-->
+                                    <!--<a href="#" class="btn btn-default btn-flat">Logout</a>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</li>-->
+                    <!--&lt;!&ndash; Control Sidebar Toggle Button &ndash;&gt;-->
+                    <!--<li>-->
+                        <!--<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            </div>
+        </nav>
+    </header>
+</template>

@@ -1,0 +1,14 @@
+<template name="admin">
+    <div class="wrapper">
+        <!-- Main Header -->
+        {{> admin_nav_bar}}
+        {{> admin_side_bar}}
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            {{> Template.dynamic template=content}}
+        </div>
+        <!-- /.content-wrapper -->
+    </div>
+
+</template>
